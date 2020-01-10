@@ -7,3 +7,8 @@ print(requests.__version__)
 r = requests.get("http://www.google.com")
 print(r.status_code)
 print(r.text)
+
+# downloads itself from GitHub and prints out its own source code from GitHub
+r = requests.get("https://raw.githubusercontent.com/Whiteologist/CMPUT404/master/lab1.py")
+print(r.status_code)
+print(r.text)
